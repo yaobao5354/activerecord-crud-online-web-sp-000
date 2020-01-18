@@ -98,7 +98,9 @@ def can_destroy_all_items_at_once
   10.times do |i|
     Movie.create(title: "Movie_#{i}")
   end
-  10.times do |i|
-    Movie.destroy(Movie.find_by(title: "Movie_#{i}").id)
+  Movie.destory_all
+  #10.times do |i|
+
+    #Movie.destroy(Movie.find_by(title: "Movie_#{i}").id)
   end
 end
